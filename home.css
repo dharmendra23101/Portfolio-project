@@ -1,0 +1,41 @@
+
+body{
+    background-color: rgb(231, 255, 253);
+    
+}
+
+
+nav {
+    background-color: #5f3a3a;
+    padding: 1px
+    
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    
+}
+
+#dk {
+    text-align: center;
+    border: 10px;
+    border-style: solid;
+    padding: 10px 0 0 0;
+    margin: 9px;
+    background-color: #5f3a3a;
+    color: white;
+    border-color: #844141;
+    border-radius: 10px;
+}
+
+nav ul li a {
+    margin: 0 30px;
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 18px;
+    
+}
+

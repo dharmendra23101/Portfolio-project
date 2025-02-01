@@ -5,14 +5,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="home.css">
-    <style>
-        
-    </style>
+    <link rel="stylesheet" href="style.css">
+    
 </head>
 
 <body>
-    
+
     <header id="dk">
         <h1> Dharmendra Dhruw </h1>
         <p> software developer </p>
@@ -28,18 +26,32 @@
             <li><a href="login.html"> admin login </a></li>
         </ul>
     </nav>
+    <section>
+        <h2>Contect Me</h2>
+        <form id="contect">
+            <label>Name</label>
+            <input type="text" id="name" placeholder="enter your name..." required>
+            <label>Email</label>
+            <input type="email" id="mail" placeholder="enter your email.." required>
+            <label>Message</label>
+            <textarea placeholder="enter your Message..." id="message" required></textarea>
+            <button type="submit">Send</button>
+
+        </form>
+    </section>
+
+
 
     <section id="admin-login">
         <h2>Admin Login</h2>
         <form id="admin-form">
             <label>Username</label>
             <input type="text" id="username" required>
-            <label>Password</label> 
+            <label>Password</label>
             <input type="password" id="password" required>
             <button type="submit">Login</button>
         </form>
-    
-
+    </section>
     <script src="script.js"></script>
 
 </body>

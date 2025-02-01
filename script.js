@@ -31,4 +31,25 @@ document.getElementById("contect").addEventListener('submit', function (e) {
     localStorage.setItem("responses", JSON.stringify(responses));
     console.log(responses);
     this.reset();
+    userresponse()
 });
+
+
+function userresponse() {
+    const responsContainer = document.getElementById("user-response");
+    const responses = JSON.parse(localStorage.getItem('responses')) || [];
+    responsContainer.innerHTML = "";
+
+    responses.forEach(response => {
+        const resposeElement = document.createElement("div");
+        resposeElement.innerHTML = `
+    <p> Name : ${response.name} </P>
+    <p> Email : ${response.mail} </P>
+    <p> Message : ${response.message} </P>
+    <p> Date : ${response.date} </P>
+    <hr>
+    `
+        responsContainer.append(resposeElement);
+    });
+}
+userresponse()

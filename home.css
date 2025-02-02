@@ -1,49 +1,64 @@
 
-body, html{
-    background-color: rgb(231, 255, 253);
+*{
+    margin: 0;
+    padding: 0;
     
+}
+body {
+   
+    background: linear-gradient(to bottom, rgb(1, 1, 60), black);
+    margin: 0;
+    padding: 0;
+    position: relative;
 }
 
 
-nav {
-    background-color: #5f3a3a;
-    padding: 1px
-    
+
+
+
+/* navbar */
+.nav_item {
+    color: white;
+}
+.nav-link{
+    color: white;
 }
 
-nav ul {
-    list-style-type: none;
+
+
+
+/* for intro */
+.container {
+    display: flex;
+    width: 100%;
+    max-width: 1200px;
+    
+}
+.text {
+    flex: 1.2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: left;
+    padding: 20px;
+    color: white;
+}
+.text-p{
+    color: rgb(199, 199, 199) ;
+}
+
+.image {
+   
+    flex: 1;
     display: flex;
     justify-content: center;
+    align-items: center;
     
 }
-
-#dk {
-    text-align: center;
-    border: 10px;
-    border-style: solid;
-    padding: 10px 0 0 0;
-    margin: 9px;
-    background-color: #5f3a3a;
-    color: white;
-    border-color: #844141;
+.image img {
+    max-width: 80%;
+    height: auto;
     border-radius: 10px;
-}
-
-nav ul li a {
-    margin: 0 30px;
-    color: #fff;
-    text-decoration: none;
-    font-weight: bold;
-    font-size: 18px;
+    padding: 10px;
     
-}
-
-canvas {
-    display: block;
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
 }

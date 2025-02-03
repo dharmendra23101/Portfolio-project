@@ -1,16 +1,11 @@
 
-*{
+body{
     margin: 0;
     padding: 0;
-    
-}
-body {
-   
     background: linear-gradient(to bottom, rgb(1, 1, 60), black);
-    margin: 0;
-    padding: 0;
-    position: relative;
 }
+
+
 
 
 
@@ -31,8 +26,6 @@ body {
 .container {
     display: flex;
     width: 100%;
-    max-width: 1200px;
-    
 }
 .text {
     flex: 1.2;
@@ -62,3 +55,41 @@ body {
     padding: 10px;
     
 }
+
+
+
+.foot{
+    bottom: 0;
+    width: 100%;
+    background-color:rgb(1, 1, 21);
+    box-shadow: 0 0 1pc rgb(13, 38, 131);
+    color: white;
+    text-align: center;
+    font-size: 14px;
+    padding: 40px;
+}
+
+.contact-name{
+    background-color: rgb(176, 55, 209);
+   font-size: 11px;
+   padding: 2px;
+   border-radius: 3px;
+}
+
+.contect-item{
+    margin: 2px;
+    font-size: 10px;
+    text-align: center;
+    justify-content: center;
+    padding: 2px;
+}
+
+.contact-in{
+    font-size: 11px;
+    border-radius: 3px;
+}
+
+
+
+
+

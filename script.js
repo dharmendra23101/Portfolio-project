@@ -1,20 +1,4 @@
-document.getElementById("admin-form").addEventListener('submit', function(e) {
-    e.preventDefault();  // Prevent form from submitting
 
-    const username = document.getElementById("username").value;
-    const password = document.getElementById("password").value;
-
-    // Basic validation
-    if (username === "" || password === "") {
-        alert("Please fill in both fields.");
-    } else {
-        // Log the username and password
-        console.log("Username:", username);
-        console.log("Password:", password);
-        
-        // Here you can add an AJAX request or further processing
-    }
-});
 
 console.log("Form script loaded.");
 document.getElementById("contect").addEventListener('submit', function (e) {
@@ -34,6 +18,19 @@ document.getElementById("contect").addEventListener('submit', function (e) {
     userresponse()
 });
 
+function formatDateTime(dateString) {
+    let date = new Date(dateString);
+    
+    let day = String(date.getDate()).padStart(2, '0');
+    let month = String(date.getMonth() + 1).padStart(2, '0'); // Months are zero-based
+    let year = date.getFullYear();
+    
+    let hours = String(date.getHours()).padStart(2, '0');
+    let minutes = String(date.getMinutes()).padStart(2, '0');
+    let seconds = String(date.getSeconds()).padStart(2, '0');
+    
+    return `${day}/${month}/${year} - ${hours}:${minutes}:${seconds}`;
+}
 
 function userresponse() {
     const responsContainer = document.getElementById("user-response");
@@ -46,7 +43,7 @@ function userresponse() {
     <p> Name : ${response.name} </P>
     <p> Email : ${response.mail} </P>
     <p> Message : ${response.message} </P>
-    <p> Date : ${response.date} </P>
+    <p> Date : ${formatDateTime(response.date)} </P>
     <hr>
     `
         responsContainer.append(resposeElement);

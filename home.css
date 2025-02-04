@@ -56,16 +56,6 @@ body{
     
 }
 
-@keyframes float {
-    0% { transform: translateY(0); }
-    50% { transform: translateY(-10px); }
-    100% { transform: translateY(0); }
-}
-
-.animated-character {
-    animation: float 3s ease-in-out infinite;
-}
-
 /* icon */
 .icon-container {
     display: inline-flex;
@@ -114,6 +104,18 @@ body{
     .text{
         font-size: 0.4rem;
     }
+}
+
+
+
+@keyframes float {
+    0% { transform: translateY(0); }
+    50% { transform: translateY(-10px); }
+    100% { transform: translateY(0); }
+}
+
+.animated-character {
+    animation: float 3s ease-in-out infinite;
 }
 
 

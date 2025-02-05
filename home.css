@@ -12,14 +12,21 @@ body{
 
 
 /* navbar */
-.nav_item {
-    color: white;
+.nav_ele {
+    border-radius: 10px;
 }
 .nav-link{
-    color: white;
+    
+    border-radius: 10px;
 }
 
 
+
+.nav_ele :hover{
+    background-color: rgb(44, 67, 198);
+    
+   
+}
 
 
 /* for intro */
@@ -121,14 +128,14 @@ body{
 
 
 .foot{
-    bottom: 0;
+    
     width: 100%;
     background-color:rgb(1, 1, 21);
     box-shadow: 0 0 1pc rgb(13, 38, 131);
     color: white;
     text-align: center;
     font-size: 14px;
-    padding: 40px;
+    padding: 5px;
     
 }
 

@@ -1,11 +1,9 @@
 
 body{
+    min-height: 100vh; 
     margin: 0;
-    padding: 0;
     background: linear-gradient(to bottom, rgb(1, 1, 60), black);
 }
-
-
 
 
 

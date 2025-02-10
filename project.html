@@ -20,7 +20,7 @@
 
     <nav class="navbar navbar-expand-lg bg">
         <div class="container-fluid ">
-           
+
             <div
                 style="width: 80px; height: 80px; display: flex; align-items: center; justify-content: center; overflow: hidden;">
                 <img src="logo.png" alt="Logo" style="width: 100%; height: 100%; object-fit: contain;">
@@ -38,7 +38,7 @@
 
                     <li class="nav_item">
                         <div class="nav_ele">
-                            <a class="nav-link" aria-current="page" href="index.html" style="color: rgb(255, 255, 255);">Home</a>
+                            <a class="nav-link" aria-current="page" href="#" style="color: rgb(255, 255, 255);">Home</a>
                         </div>
                     </li>
                     <li class="nav_item">
@@ -53,7 +53,7 @@
                     </li>
                     <li class="nav_item">
                         <div class="nav_ele">
-                            <a class="nav-link" aria-current="page" href="project.html" style="color: white;">Projects</a>
+                            <a class="nav-link" aria-current="page" href="#" style="color: white;">Projects</a>
                         </div>
                     </li>
                     <li class="nav_item">
@@ -74,15 +74,47 @@
 
     <div id="pro">
         <div id="pro1" class="projects">
-             <div class="name">
-                Sudoku Solver
-             </div>
+            <div class="name">
+                SUDOKU SOLVER
+            </div>
+            <div class="container">
+                <div class="text">
+                    <p>
+                        Developed a dynamic Sudoku Solver web application using HTML, CSS, and JavaScript. The
+                        application features:
+                    </p>
+                    <ul>
+                        <li>Interactive Sudoku Grid: Users can input values with real-time validation to prevent
+                            incorrect entries.</li>
+                        <li>Automated Solver: Implements a backtracking algorithm to solve Sudoku puzzles efficiently.
+                        </li>
+                        <li>Responsive Design: Ensures a smooth user experience across different screen sizes.</li>
+                        <li>Error Handling: Highlights invalid inputs and alerts users about incorrect entries.</li>
+                        <li>Clear Grid Functionality: Allows users to reset the puzzle with a single click.</li>
+                    </ul>
+                    <p>This project demonstrates problem-solving skills, algorithm implementation, and UI/UX design for
+                        interactive web applications. 🚀</p>
+                    <a href=""></a>
+                    <div class="sudoku-link">
+                        <a href="https://dharmendra23101.github.io/sudoku/" target="_blank">Go to Sudoku Solver</a>
+                    </div>
+                </div>
+                <div class="pic">
+                    <div class="contain">
+                        
+                        <div class="grid" id="sudoku-grid"></div>
+                        <div class="buttons">
+                            <button onclick="solveSudoku()">Solve</button>
+                            <button onclick="clearGrid()">Clear</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
     <div style="width: 100%; height: 4px; background-color: darkgreen; margin: 15px auto; border-radius: 4px;"></div>
 
-
-    <script src="script.js"></script>
+    <script src="project.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>
